@@ -1,0 +1,47 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowGadgets | Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Header -->
+      <header>
+        <h1>GlowGadgets</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="products.html" class="active">Products</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+
+      <!-- Main Section -->
+      <section class="products">
+        <h2>Our Products</h2>
+
+        <!-- Search Filter -->
+        <div class="filter">
+          <input type="text" id="search" placeholder="Search gadgets..." />
+        </div>
+
+        <!-- Product List (Dynamically Injected) -->
+        <div class="product-list" id="productList">
+          <!-- Products injected via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 GlowGadgets. All rights reserved.</p>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="products.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

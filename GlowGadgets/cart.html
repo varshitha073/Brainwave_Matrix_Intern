@@ -1,0 +1,49 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowGadgets | Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <h1>GlowGadgets</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html" class="active">Cart</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="cart">
+          <h2>Your Cart</h2>
+          <div id="cartItems" class="cart-items"></div>
+
+          <div class="cart-summary">
+            <h3>Total: ₹<span id="totalPrice">0</span></h3>
+            <a href="products.html" class="btn">🛍️ Continue Shopping</a>
+
+            <button class="btn clear-cart-btn" onclick="clearCart()">
+              Clear Cart
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2025 GlowGadgets. All rights reserved.</p>
+      </footer>
+
+      <!-- JS -->
+      <script src="products.js"></script>
+      <script src="script.js"></script>
+
+      <!-- Toast notifications -->
+      <div id="toast-container"></div>
+    </div>
+  </body>
+</html>
