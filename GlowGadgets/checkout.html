@@ -1,0 +1,50 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - GlowGadgets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <h1>GlowGadgets - Checkout</h1>
+        <nav><a href="products.html">Products</a></nav>
+      </header>
+
+      <section class="checkout-container">
+        <h2>Order Summary</h2>
+        <div id="order-summary"></div>
+
+        <h2>Shipping & Payment Info</h2>
+        <form id="checkout-form">
+          <label>Full Name:</label>
+          <input type="text" required /><br />
+
+          <label>Email:</label>
+          <input type="email" required /><br />
+
+          <label>Phone:</label>
+          <input type="tel" required /><br />
+
+          <label>Shipping Address:</label>
+          <textarea required></textarea><br />
+
+          <label>Payment Method:</label>
+          <select required>
+            <option value="">--Select--</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="upi">UPI</option>
+            <option value="cod">Cash on Delivery</option></select
+          ><br />
+
+          <button type="submit" class="btn">Place Order</button>
+        </form>
+      </section>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

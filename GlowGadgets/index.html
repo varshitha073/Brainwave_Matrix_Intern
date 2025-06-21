@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlowGadgets | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <h1>GlowGadgets</h1>
+        <nav>
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+        <button
+          id="theme-toggle"
+          title="Toggle Light/Dark Mode"
+          aria-label="Toggle Theme"
+        >
+          🌙
+        </button>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <h2>Discover the Future of Tech Accessories</h2>
+        <p>Shop our latest gadgets with sleek design & powerful performance.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="info-section">
+        <h2>👋 About GlowGadgets</h2>
+        <p>
+          GlowGadgets is your one-stop shop for the latest tech gadgets. We
+          bring you handpicked electronics, smart devices, and accessories at
+          unbeatable prices. Trusted by thousands of gadget lovers across the
+          globe!
+        </p>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="info-section">
+        <h2>🌟 Features</h2>
+        <ul class="features-list">
+          <li>🚀 Fast and Secure Checkout</li>
+          <li>📦 Quick Delivery Services</li>
+          <li>💰 Great Deals & Discounts</li>
+          <li>🛡️ Warranty on All Products</li>
+        </ul>
+      </section>
+
+      <!-- Product Cards Section -->
+      <section id="product-list" class="product-list"></section>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 GlowGadgets. All rights reserved.</p>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="products.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
